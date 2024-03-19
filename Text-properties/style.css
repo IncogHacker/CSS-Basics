@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** ------------------------------------- -->
 /**  TEXT PROPERTIES IN CSS  
 /** ---------------------------------------- -->
@@ -161,3 +162,168 @@ p::first-letter{
     font-weight: 600;
 }
 
+=======
+/** ------------------------------------- -->
+/**  TEXT PROPERTIES IN CSS  
+/** ---------------------------------------- -->
+
+/*?  Text Alignment:- The `text-align` property controls the horizontal alignment of text within an element's box.
+- Common values are `left`, `center`, `right`, and `justify`. */
+
+/*? Text Decoration:- The `text-decoration` property allows you to add decorations like underlines, overlines, or line-through to text. */
+
+/* - text-decoration-line
+    - The text-decoration-line property specifies which type of line should be used as decoration for text, such as underline, overline, line-through, or none.
+
+- text-decoration-color
+    - The text-decoration-color property sets the color of the text decoration lines, like underlines or overlines.
+
+- text-decoration-style
+    - The text-decoration-style property is used to set the style of the decoration line.
+
+- text-decoration-thickness
+    - Specifies the thickness of the text decoration line
+
+- text-decoration */
+
+/*? textTransform:- The text-transform property allows you to control the capitalization of text. */
+/* Values include uppercase (converts text to all uppercase), lowercase (converts text to all lowercase), and capitalize (capitalizes the first letter of each word). */
+
+/** ------------------------------------- -->
+/**  TEXT SPACING IN CSS  
+/** ---------------------------------------- -->
+
+/*? letter-spacing Property:- The letter-spacing property controls the spacing between characters in a text. */
+/* - It can be set to positive values to increase spacing or negative values to decrease spacing. */
+
+/*? word-spacing Property:- The word-spacing property controls the spacing between words in a text. */
+/* - It can be set to positive values to increase word spacing or negative values to decrease it. */
+
+/*? The line-height property is used to specify the space between lines: */
+
+/*? white-space is used to control how white space within an element is handled. */
+
+/** ------------------------------------- -->
+/**  TEXT PROPERTY OF CSS3
+/** ---------------------------------------- --> */
+
+/*? Text Shadow:- The text-shadow property allows you to add a shadow effect to text characters. */
+/* - It takes three values: horizontal shadow offset, vertical shadow offset, and the shadow color. */
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+@font-face{
+font-family: MY FONTS;
+src:url("/FONTS/fontsdownload/payback_2/Payback.otf") format("OpenType");
+}
+
+
+body{
+    background-color: #ccc;
+   /* display: grid; 
+    place-items: center;   */
+    /* font-family: "MY FONTS"; */
+}
+
+
+main{
+    display: grid;
+    place-items: center; 
+
+}
+p{
+     width: 50%;
+    text-align: center; 
+    font-family: "MY FONTS";
+   
+}
+
+
+h1{
+    font-family: "MY FONTS" , "Pangolin" ,cursive;
+    font-size: 30px;
+    font-weight: 10;
+
+    /* ? Text properties start here  */
+
+    text-align: center; 
+    /* text-align:justify;  */ /*use proper available space */
+
+
+    /* ? decoration of line  */
+
+
+    /* !text-decoration-line:line-through ; */
+
+    text-decoration-line: underline;
+
+    text-decoration-color: red ;
+
+    text-decoration-thickness: 10px; /* increase the thickness of line */
+
+   /* !text-decoration:overline; */
+
+/*! text-decoration-style:dotted , double ,wavy  etc..more  option on websites..*/;
+
+
+/* text-transform: uppercase;
+text-transform: lowercase; */
+text-transform: capitalize; /* har word ka first letter capital hojayega */
+   
+}
+/** ------------------------------------- -->*/
+/**  TEXT SPACING IN CSS  
+/** ---------------------------------------- -->*/
+
+
+footer{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    
+}
+
+.one{
+    width: 50%;
+     letter-spacing: 1.5px; /* gives the gap between letters */
+     word-spacing:2px;   /* give the space between words */
+     line-height:2;    /* as you see distance between above and upperline in output*/
+
+     /*! white-space: nowrap;  (YE ek hi line me sara sentence dikha dega) */
+
+} 
+
+.shadow
+{
+    font-size: 4rem;
+    font-family: normal;
+
+    text-shadow: -15px -20px 5px blue; /* -ve shadow comes behind the word and left side (1st) */
+                                      /*  +ve shadow behind and write side (1st)*/
+                                      /*  + and - ve shadow upside and down vertically (2nd value)*/
+                                      /* blue the shadow */
+}
+
+
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS
+/** ---------------------------------------- --> */
+
+/*? 1: How can you control the spacing between lines of text in CSS? */
+/* The line-height property is used to control the spacing between lines of text. It can be set to a specific unit like px or a relative value like 1.5, which multiplies the font size. */
+
+/*? 2: How can you create drop caps (initial letter styling) in CSS? */
+/* You can create drop caps using the ::first-letter pseudo-element in CSS.  */
+
+
+/* ! Styling the first letter in word  */
+
+
+p::first-letter{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+>>>>>>> b8baaeb4d67d92fc94f65fff643327fc3276c82c
