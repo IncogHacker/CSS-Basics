@@ -1,0 +1,278 @@
+/** ------------------------------------- -->
+/**  BORDERS IN CSS
+/** ---------------------------------------- --> */
+
+/*? In CSS, the `border` property is used to create and control the borders of HTML elements. Borders are used to visually separate and define the boundaries of elements on a web page. The `border` property allows you to specify the style, width, and color of borders. Let's explore the `border` property in depth: */
+
+/* 1. Short-hand Syntax:
+
+       ? border: [border-width] [border-style] [border-color];
+
+    - `[border-width]`: Specifies the width of the border (e.g., `1px`, `2px`, `3px`, etc.).
+    - `[border-style]`: Specifies the style of the border (e.g., `solid`, `dotted`, `dashed`, etc.).
+    - `[border-color]`: Specifies the color of the border (e.g., a color name, hex code, RGB value, etc.). */
+
+/*TODO Let understand the Each border property one by one.  */
+
+/*? Border Width: The border-width property controls the thickness of the border. You can specify it using units like pixels (px), ems (em), or percentages (%). */
+
+
+/*? Border Style: The border-style property determines the style of the border. Common values include solid, dotted, dashed, double, groove, ridge, inset, and outset. Each style results in a different visual appearance for the border. */
+
+/* Keyword values */
+/*
+border-style: none;
+
+border-style : hidden;
+
+border-style: dotted;
+
+border-style: dashed;
+
+border-style: solid;
+
+border-style: double;
+
+border-style: groove;
+
+border-style: ridge;
+
+border-style: inset;
+
+border-style: outset;
+
+ */
+/* !________________________________________________________________________________ */
+
+/*border-style: dotted solid; */
+
+/* ! top and bottom  border style show dotted | left and right border style  show solid  */
+
+
+/* border-style: hidden double dashed; */
+
+/* ! top (hidden)| left and right(double) | bottom(dashed) */
+
+
+/* !___________________________________________________________________________________________ */
+
+/*? Border Color: The border-color property sets the color of the border. You can specify it using color names, hex codes, RGB values, or other color notations. */
+
+
+/** ---------------------------------------- --> */
+
+html{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+/* background-image:url("/images/ganpati.jpg") ; */
+background-color: white;
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-size: cover;
+
+
+}
+.main{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color:  green;
+   
+}
+
+
+#section-border{
+
+
+/* *********************************************************************************     */
+    p{
+    width: 50%;
+    background-color: grey;
+    /* border: 10px solid #003180; */
+
+/*? write each property individual */
+
+/* border-width:10px;
+border-color:#003180;
+border-style: solid; */
+
+/*?  we can write the borders left , right , bottom etc  individually*/
+
+ /* border-top:10px solid  green;
+ border-bottom:10px dotted red;
+ border-right: 10px inset blue;
+ border-left : 10px double black; */
+
+ /*? Now, further we can go more deeper with each individual values. */
+ 
+  border-top-width: 15px;
+  border-top-style: solid;
+  border-top-color: #003b99;
+
+  border-bottom-width: 20px;
+  border-bottom-style: dotted;
+  border-bottom-color: black;
+
+
+    }
+/* ********************************************************************************** */
+
+    display: grid;
+    place-items: center;
+    text-align:center;
+   
+    
+    background-color: white;
+
+}
+
+
+/* !____________________________________________________________________________________________________________________ */
+
+/** ------------------------------------- -->
+/**  BORDERS IN CSS3
+/** ---------------------------------------- --> */
+
+/*? Border-radius: The border-radius CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners. */
+
+/* Radius is set for all 4 sides */
+
+/*? border-radius: 10px; */
+
+/* top-left-and-bottom-right | top-right-and-bottom-left */
+
+/*? border-radius: 10px 20%; */
+
+/* Creating Custom Radius for Each Corner:  */
+/* top-left | top-right | bottom-right | bottom-left */
+
+/*? border-radius: 15px 5px 10px 20px; */
+
+
+
+#division{
+
+    display: grid;
+    place-items: center;
+
+    div{
+     
+        width:500px;
+        height:500px;
+       background-color: blue; 
+
+
+        
+
+            /*? border-radius: 15px 5px 10px 20px; */
+                /* top-left | top-right | bottom-right | bottom-left */
+
+                  /* border-radius: 100px 25px 0px 10px;  */
+                  
+        /*! __________________________________________________________________________________          */
+             
+             
+                  /* Radius is set for all 4 sides */
+
+                 /*? border-radius: 10px; */
+                  /* border-radius:500px; gives the circle */
+
+
+                  /* !____________________________________________________________________________ */
+
+                  /* border-radius: 50%; gives the circle also */
+
+                  /* background-image: linear-gradient(
+                    to right top, 
+                    #051937,
+                  #004d7a,
+                  #008793,
+                  #00bf72,
+                  #a8eb12); */
+                  
+                  background-image: linear-gradient(
+                  to right bottom,
+                   #37051f,
+                    #7d2129,
+                    #b35717, 
+                    #c69e00,
+                     #a8eb12);
+                  
+
+                          /* ! links */
+                              /*?  above color copied from this website  */
+                /*  <!-- https://mycolor.space/gradient -->
+                  <!-- https://uigradients.com/#DirtyFog -->*/
+
+
+                  border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ; /*gives the different size of leaves */
+    }
+}
+
+
+
+
+
+
+
+
+
+/** ------------------------------------- -->
+/** NOTES + TIPS
+/** ---------------------------------------- --> */
+/* checkout more on here  👉 https://9elements.github.io/fancy-border-radius/ */
+/* checkout more on here  👉 https://10015.io/tools/css-border-radius-generator */
+
+/** ------------------------------------- -->
+/** INTERVIEW QUESTIONS
+/** ---------------------------------------- --> */
+
+/*? 1: How do you set a border around an HTML element in CSS? Explain the border property and its values.; */
+/* border: 2px solid #333; */
+
+/*? 2: How can you create rounded corners for an HTML element in CSS?  */
+/* border-radius: 10px; */
+
+/*? 3: How do you create a circular border using border-radius? */
+/* border-radius: 50%; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **______________________________________________________________________________________________________ */
+/* ! #section-two{
+
+    div{
+
+    p{
+        width: 50%;
+        background-color: white;
+        color: black;
+
+      
+    }
+    display: grid;
+    place-items: center;
+    text-align:center;
+}
+
+}
+ */
+/*** _________________________________________________________________________________________________________ */

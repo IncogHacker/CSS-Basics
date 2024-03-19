@@ -1,0 +1,53 @@
+/* /* #ff3368; #ecfdff;  hex color */
+
+h1{
+    color: #d6a2b0;
+}
+h1:hover{
+    color: rgb(51, 255, 0);
+}
+
+
+    /* class selector */
+
+.btn{
+    color:rgb(235, 117, 7);
+    font-weight: bold;
+
+}
+.para{
+    color:blueviolet;
+}
+.para:hover{
+    color :#4e0115;
+}
+
+
+      /* id selector */
+
+#select{
+
+    color: darkblue;
+}
+/* # use for chages in html regards the id using css */
+
+/* pseudo-class */
+
+#change{
+    background-color: green;
+    color:#4e0115;
+}
+
+/* we can also do this hover thing by id selection  */
+/* #change:hover{
+
+    color: white;
+
+} */
+
+/* /* 2nd method  pseudo class */
+
+#change:hover
+{
+  color: white;
+}
