@@ -1,0 +1,42 @@
+/** ------------------------------------- -->
+/**  PADDING IN CSS
+/** ---------------------------------------- --> */
+
+/*? Padding is used to create space around an element's content, inside of any defined borders.  */
+
+/*? 1. Uniform Padding:
+    padding: 10px;  
+    👉   This sets 10 pixels of padding on all sides of the element. */
+
+/*? 2. Vertical and Horizontal Padding:  
+    padding: 5px 10px;  
+    👉  This sets 5 pixels of padding on the top and bottom sides and 10 pixels on the right and left sides. */
+
+/*? top | left and right | bottom */
+/* padding: 1px 2px 2px; */
+
+/*? top | right | bottom | left */
+/* padding: 5px 1px 0 2px; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+
+
+
+h1{
+    text-align: center;
+    font-family: "Bungee Spice", sans-serif;;
+    font-size: 4rem;
+
+}
+ 
+main{
+    width:100%;
+   place-items: center;
+   display: grid;
+}
+
+p{
+    width: 50%;
+    text-align: center;
+}
