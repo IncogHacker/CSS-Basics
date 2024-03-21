@@ -18,7 +18,34 @@
 /*? top | right | bottom | left */
 /* padding: 5px 1px 0 2px; */
 
+/*? 1. Individual Padding: */
+
+/*  padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    This sets different padding values for each side of the element. */
+
+/** Use Cases: */
+
+/* - Spacing Elements: Padding is commonly used to add space between an element's content and its border, creating separation between elements on a web page.
+
+- Button Styling: Padding is used to control the spacing inside buttons, making them visually appealing and comfortable to click.
+
+- Text and Images: Padding can be applied to text and images to create spacing around them, improving readability and aesthetics.
+
+- Responsive Design: Padding can be adjusted to create responsive layouts, ensuring content is appropriately spaced on different screen sizes.
+
+- Creating Boxes and Panels: Padding is essential for defining the spacing inside boxes, panels, and containers.
+
+In summary, the `padding` property in CSS is a versatile tool for controlling the spacing around an element's content. By using different values and techniques, you can achieve precise control over the layout and spacing of elements on your web page, improving both aesthetics and usability. */
+
+/** ---------------------------------------- --> */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 
 
 
@@ -29,14 +56,54 @@ h1{
     font-size: 4rem;
 
 }
+h1:hover{
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;;
+    font-size: 4rem;
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+}
  
 main{
-    width:100%;
+   
+   width:100%;
    place-items: center;
    display: grid;
 }
 
 p{
+    background-image:  radial-gradient(circle, #050937, #35195a, #6d1f78, #ab1d8d, #eb1297);
+    padding-top: 80px ;
+    padding-bottom: 80px;
+    padding-left:50;
+    border-width: 7px;
+    border-style: dashed;
+    border-color: #3B3FA4;
+    border-radius: 20px;
     width: 50%;
     text-align: center;
+    color: white;
+    
+}
+p:hover{
+    background-image: radial-gradient(circle, #370521, #2e0b1e, #240e1a, #1c0f16, #110f10);
+}
+
+div{
+width: 100%;
+display: grid;
+place-items:center;
+
+button{
+    background-image: radial-gradient(circle, #370521, #2e0b1e, #240e1a, #1c0f16, #110f10);
+    border: 5px outset green;
+    padding: 30px ; /*apply on all */
+
+    a{
+        color:green;
+    }
+    a:hover{
+        color:white;
+    }
+}
 }
