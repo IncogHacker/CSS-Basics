@@ -1,0 +1,133 @@
+
+* 
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+} 
+
+
+h1{
+    width:800px;
+    margin: auto;
+    padding-top:2px ;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    border:20px inset green;
+}
+
+/** ------------------------------------- -->
+/**  LINEAR GRADIENTS
+/** ---------------------------------------- --> */
+
+/*? The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line */
+
+/* USING LINEAR GRADIENT */
+
+#section-one{
+    margin:auto;
+    margin-top: 50px;
+    width:100%;
+    height: 50vh;
+    /* border: 10px solid black; */
+    padding: 50px;
+    border-radius: 20px;
+
+
+    /* ?background-image: linear-gradient(yellow, black);  */
+        /*default top(yellow) to bottom(black) = 180deg if we write same thing happen */
+   
+
+
+     /* for left to right or also use to left , to top  */
+     /* yellow flow right to left(270deg) and  left side black present*/
+
+    /* ?background-image:linear-gradient(to right, yellow,black); */
+
+
+    /*! ANGELS IN GRADIENT (diagonally) */
+
+    /*? background-image: linear-gradient(to bottom right, rgb(255, 0, 85), black); */
+
+    /* ?background-image:linear-gradient(to bottom left ,rgb(255, 0, 85), black) */
+
+    /* TRANSPARENT GRADIENT */
+
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.5));
+}
+
+
+
+
+
+/**-----------------------
+/** Interview Question  
+/** ----------------------- */
+
+/*?  1: What are CSS gradients, and why are they useful in web design? */
+
+/* sol: CSS gradients are a way to create smooth transitions between two or more specified colors. They are useful in web design because they allow for the creation of visually appealing backgrounds, buttons, and text effects, enhancing the overall design and user experience. */
+
+/*? 2: Explain the difference between linear gradients and radial gradients in CSS. When would you use one over the other?
+
+sol: Linear gradients create a smooth transition along a straight line, such as from top to bottom or left to right. Radial gradients, on the other hand, create a circular transition from the center outward. You would use linear gradients for linear background effects like horizontal or vertical color transitions. Radial gradients are ideal for creating circular elements or radial backgrounds, such as buttons or circular divs.*/
+
+/*? 3: How can you create a diagonal linear gradient in CSS? 🚀  */
+/* background-image: linear-gradient(to bottom right, #004d7a, #a8eb12); */
+
+/*? 4: How can you create a transparent gradient in CSS? 🚀 */
+/* background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); */
+
+
+
+/*? 5:Can you create a gradient that transitions from multiple colors rather than just two? 🚀  */
+
+
+#section-two{
+    margin:auto;
+    margin-top: 50px;
+    width:100%;
+    height: 50vh;
+    /* border: 10px solid black; */
+    padding: 50px;
+    border-radius: 20px;
+
+    /*!  MULTIPLE COLOR USED IN LINEAR GRADIENT */
+
+/* background-image: linear-gradient(
+  to right top,
+  #051937,
+  #004d7a,
+  #008793,
+  #00bf72,
+  #a8eb12
+); */
+
+/* ! REPEATING LINEAR GRADIENT HERE THE PIXEL BTA RHA KI KITNI PX BAAD GRADIENT KO REPEAT KRNA HAI */
+
+background-image: repeating-linear-gradient(45deg, #d2e0fb, #79ac78 100px);
+}
+
+
+
+
+
+
+/** -----------------------
+/** PROJECT
+/** ----------------------- */
+
+/*?  create a repeating linear gradient in CSS? */
+/* background-image: repeating-linear-gradient(45deg, #d2e0fb, #79ac78 45px); */
+
+/*? 2: Add color overlay on image?   */
+/* background-image: linear-gradient(
+    to right top,
+    rgba(5, 25, 55, 0.9),
+    rgba(0, 77, 122, 0.9),
+    rgba(0, 135, 147, 0.9),
+    rgba(0, 191, 114, 0.9),
+    rgba(168, 235, 18, 0.9)
+  ),
+  url("https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */

@@ -1,4 +1,4 @@
-/** ------------------------------------- -->
+/** ------------------------------------- ----
 /**  PADDING IN CSS
 /** ---------------------------------------- --> */
 
@@ -15,8 +15,15 @@
 /*? top | left and right | bottom */
 /* padding: 1px 2px 2px; */
 
+
 /*? top | right | bottom | left */
 /* padding: 5px 1px 0 2px; */
+
+
+ /*? top and bottom | left and right */
+  /* padding: 100px 150px; */
+
+
 
 /*? 1. Individual Padding: */
 
@@ -47,7 +54,12 @@ In summary, the `padding` property in CSS is a versatile tool for controlling th
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
 
-
+/* ? these line are important explain in next slides */
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} */
 
 
 h1{
@@ -71,11 +83,12 @@ main{
    display: grid;
 }
 
-p{
+.para1{
     background-image:  radial-gradient(circle, #050937, #35195a, #6d1f78, #ab1d8d, #eb1297);
     padding-top: 80px ;
-    padding-bottom: 80px;
-    padding-left:50;
+    padding-bottom: 80px;  /* we can write padding values in different way*/
+    padding-left:50px;
+    padding-right:50px;
     border-width: 7px;
     border-style: dashed;
     border-color: #3B3FA4;
@@ -85,7 +98,7 @@ p{
     color: white;
     
 }
-p:hover{
+.para1:hover{
     background-image: radial-gradient(circle, #370521, #2e0b1e, #240e1a, #1c0f16, #110f10);
 }
 
@@ -107,3 +120,29 @@ button{
     }
 }
 }
+
+footer
+{
+ width:100%;
+ display: grid;
+ place-items: center;
+ text-align: center;
+
+ .paragraph{
+    width:50%;
+    border:2px dashed black;
+    padding-left: -20px ; 
+    padding-right: 50px;/*if we give negative padding then there is nothing chnage into padding area*/
+    }
+
+}
+
+/** ------------------------------------- -->*/
+/**  INTERVIEW QUESTIONS 
+/** ---------------------------------------- --> */
+
+/*? 1: How do you set padding for all sides of an HTML element using shorthand notation? */
+ /* padding: 100px  uniform padding- one time enter then 100px in all side of paddings*/
+
+/*? 2: What is the purpose of negative padding in CSS, and can you provide an example? */
+/* Negative padding is not a standard CSS property. Padding is always a positive value to create space around an element's content. Negative margins, on the other hand, can be used to overlap elements. */

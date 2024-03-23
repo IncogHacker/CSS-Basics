@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 /* .change{
     color: rgb(255, 0, 0);
@@ -64,71 +63,4 @@ h2{
 }
 .change{
     color: currentColor;
-=======
-
-/* .change{
-    color: rgb(255, 0, 0);
-} */
-
-/* we can change the colour value manually */
-
-
-#butt{
-    color: green;
-} 
-
-/********** RGBA colors: RGBA is similar to RGB but inludes an alpha channel for opacity control. ****/ 
-
-/* alpha - 0 -1 */
-
-h1
-{
-  color: rgba(255, 0  ,0 , 0.5);
-
-}
-
-/* .change{
- color : rgb(0, 128, 0, 0.3);  
-
- alpha is opacity or transparency (0.5)
-} */
-
-
-/* Hexadecimal color  */
-
-/* You can specify colors using hexadecimal colors */
-
-/* 2nd heading  */
-h2{
-    color: #ff0000;
-}
-
-
-/* 2nd paragraph */
-.first{
-    color: #00ff00;
-}
-
-
-/*? HSLAColors : (Hue , Saturation ,Lightness) values provide a way to a specify colors based on their hue , saturantion and lightness */
-
-/* 3rd */
-/* color: hsl(hue, saturation, lightness, Alpha) */
-.second{
-
-    color: hsl(0, 100%, 50%, 0.3);
-}
-
-/* we can use this below line to transparent something */
-/* color: transparent ; */
-
-
-/*? here section (Parent) ko ek color fix kiya to uske andar (child) ka color same hoajyega jitne bhi material hain unke andar sabka color section ke liye jo provided hai waisa ho jayega depend krta kaunsa paragraph choose kr rhein currentcolor ke liye.....*/
-
-#FIRST{
-    color: hsla(0, 0%, 50%, 0.685);
-}
-.change{
-    color: currentColor;
->>>>>>> b8baaeb4d67d92fc94f65fff643327fc3276c82c
 }
