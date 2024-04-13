@@ -20,6 +20,10 @@ main{
 }
 
 img{
-    filter:drop-shadow(0 0 20px white);
+     /*Show blur shadows on sides of image */
+
+    /* filter:drop-shadow(0 0 20px white);  */
+
+    filter:drop-shadow(10px 40px 0 white);
 }
 }

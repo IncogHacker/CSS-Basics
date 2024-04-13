@@ -1,0 +1,134 @@
+/** ------------------------------------- -->
+/** CSS COMBINATORS
+/** ---------------------------------------- --> */
+
+/** CSS combinators are used to define relationships between different elements in your HTML document. They allow you to target elements based on their position and hierarchy within the document structure.  */
+
+/*? Descendant Selector (Space): Selects an element that is a descendant of another element. */
+
+/*? Child Selector (>): Selects an element that is a direct child of another element. */
+
+/*? Adjacent Sibling Selector (+): Selects an element that is immediately preceded by another element.  ek element ke side me ya uske niche jo elemnet hai wo usko target krega*/
+
+/*? General Sibling Selector (~): Selects all elements that are siblings of another element and share the same parent. */
+
+/*? Universal Selector (*): Selects all elements. */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+body {
+  color: #f0ffff;
+  height: 100vh;
+}
+.hero-section {
+  background-color: #080a0c;
+}
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.section-elements {
+  padding-bottom: 100px;
+}
+
+.section-elements .container {  /*this is the descendent selector*/
+  height: auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  color: #080a0c;
+}
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero-content h1 {
+  text-align: left;
+  font-size: 54px;
+}
+
+.hero-content p {
+  letter-spacing: 1px;
+  margin: 2rem 0 4rem 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+.hero-content a {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 32px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content-1,
+.content-2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+  font-size: 48px;
+}
+
+/** --------------------------------- */
+
+/*!Dedcendent Selector */
+
+.content-1 p{   /* this is the descendent selector */
+  font-weight:bold;
+  color:red;
+}
+
+
+/*! Child Selector*/
+
+.content-1 ul li{ /*isme ul ke andar jitne li thhe sab me green color aagya but hmme whi li chahiye jo ul ka child ho uske liye niche wala child selector use krenge  */
+
+  color:green;
+}
+
+.content-1 > ul > li{ /* Selects an element that is a direct child of another element (here ul ke andar jo li hai wo direct child hona chahiye ul kaa tabhi color change hoga wrna nhi  > (shows Direct ))*/
+  color:red;
+
+}
+
+/*! Adjacent Selector (sibling)*/
+
+/*ul ke baad p sibling hai uske adjacent li hai to usse select kr lega adjacent selector*/
+
+/* .content-1 p+li{
+  color:rgb(51, 29, 150); 
+} */
+
+/*!Genereal Sibling Selector */
+
+.content-1 ul p ~ li{  /* isme p bdde bhai honne ke naate jitne bhi list hai mere pass sabko select kr lungaa*/
+  color:orange;
+}
+
+
+
+

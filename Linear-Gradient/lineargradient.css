@@ -35,7 +35,7 @@ h1{
     border-radius: 20px;
 
 
-    /* ?background-image: linear-gradient(yellow, black);  */
+    background-image: linear-gradient(yellow, black); 
         /*default top(yellow) to bottom(black) = 180deg if we write same thing happen */
    
 
