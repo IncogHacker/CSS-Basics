@@ -1,0 +1,95 @@
+/** ------------------------------------- -->
+/**  POSITION IN CSS  
+/** ---------------------------------------- --> */
+
+/*? The position property in CSS is used to control the positioning of elements within a web page. It defines how an element should be placed relative to its normal position in the document flow or relative to its parent or containing elements. */
+
+/*? position: relative; */
+/*? Definition: Elements with position: relative; are positioned relative to their normal position in the document flow. */
+
+/*TODO New Properties Unlocked  */
+/*? Properties: top, right, bottom, left: Offset the element from its normal position. */
+
+/*? position: absolute; */
+/*? Definition: Elements with position: absolute; are positioned relative to the nearest positioned ancestor or the initial containing block. */
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1
+{
+    margin-top: 100px;
+    margin-left:610px;
+    margin-bottom: 20px;
+    
+}
+
+#Parent-div
+{ 
+    
+    margin:0 auto;
+    width:700px;
+    height:500px;
+    border: 2px solid black;
+    border-radius: 0px 15px 15px 0px;
+    background-image: linear-gradient(to right, #08395e, #155082, #2568a7, #3681ce, #499bf6);
+    box-shadow: 0px 0px 10px 5px rgb(33, 36, 33) ;
+    filter: drop-shadow(30px 15px 2px rgb(95, 89, 89));
+
+    .Child-1{
+        width:110px;
+        height: 100px;
+        padding: 25px;
+        display: grid;
+        text-align: center;
+        font-size: 1.5rem;
+        /* border: 1px solid black; */
+        background-image:  linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); ;
+
+    }
+    .Child-2{
+        width:110px;
+        height:100px;
+        /* border: 1px solid black; */
+        display: grid;
+        text-align: center;
+        font-size:1.5rem;
+        padding:25px;
+        background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+    }
+    .Child-3{
+        width:110px;
+        height:100px;
+        font-size:1.5rem;
+        padding: 25px;
+        display: grid;
+        text-align: center;
+        /* border: 1px black solid; */
+        background-image: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    }
+    .Child-4{
+        width: 110px;
+        height: 100px;
+        /* border: 1px solid black; */
+        display: grid;
+        text-align: center;
+        font-size: 1.5rem;
+        padding:25px;
+        background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+
+    }
+    .Child-5{
+        width: 110px;
+        height: 97px;
+        /* border: 1px solid black; */
+        display: grid;
+        text-align: center;
+        font-size: 1.5rem;
+        padding:25px;
+        background-image: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+
+    }
+} 

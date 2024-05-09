@@ -1,0 +1,111 @@
+<!--* ------------------------------------- -->
+<!--*  POSITION FIXED/STICKY IN CSS   -->
+<!--* ---------------------------------------- -->
+
+<!-- ? Fixed (position: fixed;):
+
+Elements with position: fixed; are positioned relative to the viewport, so they remain in the same position even when the page is scrolled.
+You can use the top, right, bottom, and left properties to specify the exact position. -->
+
+<!-- ?Sticky (position: sticky;):
+
+Elements with position: sticky; are initially positioned according to the normal flow, but they become "sticky" and stay within the viewport once they reach a specified scroll position.
+
+? You can use the top, right, bottom, and left properties to set the stickiness behavior.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <header>
+        <h1>CSS Positions -Fixed</h1>
+        <style>
+            h1 {
+                color: white;
+                display: grid;
+                text-align: center;
+                font-size: 4rem;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-image: linear-gradient(to right top, #090537, #0b165f, #10248b, #1332ba, #1242eb);
+                height: 100px;
+                padding-top: 10px;
+                width:100%;
+                /* background-attachment: fixed; */
+                position: fixed;
+                top : 0;
+                /* bottom: 0; */
+
+
+            }
+        </style>
+    </header>
+    <main>
+        <section class="one">
+
+            <div class="full-Page"></div>
+            <div class="full-Page"><a href="JOIN"><button>JOIN WHATSAPP </button> </a></div>
+            <div class="full-Page"> </div>
+            <div class="full-Page"> </div>
+
+            <style>
+                .full-Page {
+                    /* background-attachment: fixed; */
+                    height: 100vh;
+                    background-image: linear-gradient(to right top, #3ac6ec, #00a9ef, #0089ef, #0065e5, #2836cb);
+                }
+
+                      a{
+
+                        button{
+                        font-size: 4rem;
+                        border-radius: 20px;
+                        /* position: fixed; */
+                        position: sticky;
+                        top:50%; 
+                      }
+
+                   
+                }
+
+                .full-Page:nth-child(even)
+                {
+                    background: linear-gradient(to right, #56b4d3, #348f50);
+                }
+
+                /* .one{
+                    button{
+                        font-size: 4rem;
+                        border-radius: 20px;
+                        position: static;
+                    }
+                } */
+
+            </style>
+
+            </style>
+
+      </section>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+/** ------------------------------------- -->
+/**   CSS Z-Index  
+/** ---------------------------------------- --> */
+
+/*? The z-index property in CSS is used to control the stacking order of elements on a web page. It determines which elements should appear in front of or behind other elements when they overlap in the same space. Elements with higher z-index values are placed in front of elements with lower z-index values. */
+
+/** ------------------------------------- -->
+/**  NOTES + TIPS
+/** ---------------------------------------- --> */
+/*? Positioned Elements: To use z-index, an element must have a position value other than static (e.g., relative, absolute, fixed, or sticky). Positioned elements can be moved in the stacking order using z-index.  */
+
+/*? Numeric Values: */
+/* You can assign numeric values to z-index. Elements with higher numeric values will appear in front of elements with lower values. */
+
+/*? Negative Values: */
+/* You can also use negative values for z-index. Elements with lower (more negative) values will appear in front of elements with higher (less negative) values. */
+
+/** ---------------------------------------- --> */
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4rem;
+
+}
+main{
+    display: grid;
+    place-items: center;
+}
+
+.parent-div
+{
+    font-size: 1.5rem;
+    margin-top: 50px;
+    width:700px;
+    height: 500px;
+    background-image: linear-gradient(to right, #514a9d, #24c6dc);
+}
+.child
+{
+     display: grid;
+     place-items: center;
+    width:120px;
+    height: 100px;
+    padding: 20px;
+    position: absolute;
+   
+}
+.child:nth-child(even)
+{
+    background-image: linear-gradient(to right, #93edc7, #1cd8d2); 
+    font-family: "Work Sans", sans-serif;
+}
+
+
+.parent-div{
+
+    position:relative;
+}
+
+
+.child-2
+{
+    /* position: absolute; */
+    margin-left:0px;
+    font-family: "Work Sans", sans-serif;
+
+    z-index: 1; /** isko krne se jitne bhi child ek ke upar ek honge stack ke form me jisko z-index diye wo sabse upar aajayega ya usko nicche bhi kr sakte z-index ki help se */
+}

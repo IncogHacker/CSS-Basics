@@ -33,7 +33,7 @@ Displaying elements side by side within a paragraph. */
 
 /** ------------------------------------------------------------------------------------------------------ */
 
-/*todo Inline-Block Elements: */
+/*todo Inline-Block Elements: */ 
 
 /*? display: inline-block 👉  The inline-block value combines aspects of both block and inline. Elements with inline-block behave like inline elements but can have dimensions (width and height) and vertical alignment. */
 
@@ -48,3 +48,108 @@ Creating custom-styled buttons.
 Displaying images with captions or descriptions next to them. */
 
 /** ------------------------------------------------------------------------------------------------------ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+header{  
+    width:1000px;
+     /* padding-top:50px; */
+    font-size: 70px;
+    box-sizing:border-box;
+    border:5px solid red;
+    margin:20px;
+    padding-left:20px;
+}
+
+main{
+       
+    width:1700px;
+    height: 100vh;
+    margin:20px;
+    font-size:3rem;
+    font-family: "Roboto", sans-serif;;
+    
+    .one{
+              color:white;
+              border-radius: 20px;
+              background-image: linear-gradient(to right, #082a5c, #183776, #294591, #3b52ad, #5060c9);
+              margin-bottom: 5px;
+    }
+
+    .two
+    {
+        color:white;
+        border-radius: 20px;
+        background-image: linear-gradient(to left, #16386b, #204282, #2d4d9a, #3d57b1, #5060c9);
+        margin-bottom: 5px;
+    }
+
+
+    #first{
+  
+        border-radius: 20px;
+        color:white;
+        background-image: linear-gradient(to right, #4462cd, #4b6cd1, #5275d5, #5a7fd9, #6388dc, #6090de, #6098e0, #62a0e1, #5ea8e0, #5fafdd, #66b6da, #70bcd6);
+        margin-bottom: 5px;
+   
+}
+    #S{
+        border-radius: 20px;
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        margin-bottom: 500px;
+        margin-left: 70px;
+    }
+    #third
+    {  
+        border-radius: 20px;
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        margin-top: 10px;
+
+    }
+    #fourth
+    {
+        border-radius: 20px;
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        margin-left:10px;
+        margin-top: 10px;
+    }
+
+
+}
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS  
+/** ---------------------------------------- -->
+
+/*? 1: What is the main difference between display: block; and display: inline; elements in CSS? */
+
+/*? 1: What does display: none; do to an element's accessibility? */
+/* It makes the element completely inaccessible to screen readers and keyboard navigation. */
+
+/*! display: none; */
+
+/*? 3: How do you center an element horizontally using display: block;? */
+/* To center a display: block; element horizontally, you can set its left and right margins to auto. */
+
+/* !  p{
+      width :500px;   
+       margin : 0 auto;  
+     } */
+   
+   
+
+
+/*? 4: What is the default behavior of display: inline; elements with regard to margin and padding? */
+/* display: inline; elements don't respect top and bottom margins or padding (only it apply when we use background image on that time), only left and right. Also width and height is not accepted */
+
+/*? 5: How can you make an inline element like a link or a span act like a block-level element? ⭐⭐*/
+/* You can apply display: block; or display: inline-block; to make an inline element behave like a block-level element. */
+
+/*? 6: What is the impact of applying display: block; to an anchor <a> element? */
+/* Applying display: block; to an anchor element allows you to set its width, height, and apply padding or margin. This is often used for creating custom-styled buttons. */

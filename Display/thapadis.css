@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1
+{
+    margin-top: 100px;
+    font-size: 10rem;
+
+}
+
+div{
+
+    p{
+        margin-bottom: 20px;
+        padding: 10px;
+        width:1700px;
+        border-radius: 5px;
+        font-size:3rem; 
+        color:white;
+        background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    }
+
+    a
+
+    { /**not work in inline element but margin left right work **/
+        /* margin-top:100px; */
+
+
+        /* margin-left: 20px; */
+        color:white;
+
+
+      
+     /* width:500px; */
+     /* height: 100vh; */
+        border: 1px solid green;
+        padding: 15px 30px;
+        text-shadow: 2px 2px 5px blue;
+        border-radius: 5px;
+        font-size:3rem;
+        background-image:linear-gradient(to right, #4462cd, #4b6cd1, #5275d5, #5a7fd9, #6388dc, #6090de, #6098e0, #62a0e1, #5ea8e0, #5fafdd, #66b6da, #70bcd6); 
+        margin-top: 100px;
+        margin-right: 30px;
+
+          /*!-----------for proper use of width and height in  Inline Element we have to use of display: inline block element--------------**/
+
+        
+        display: inline-block;
+
+
+        /*! this make elements be block type elements jo pura line kha jayega */
+        /* display: block; */
+    }
+   
+.inline-block-elem
+{
+font-size: 3rem;
+background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+/* display: none; */
+ /** make invsible the words and thing which is present on the display or where we apply this elemnet(none) only specifically that place things get invisible  **/
+
+}
+
+
+  
+
+}

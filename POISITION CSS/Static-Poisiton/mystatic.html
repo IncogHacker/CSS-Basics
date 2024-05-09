@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <style>
+
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        </style>
+
+    <header>
+        <h1>CSS POISITION - Static & Relative</h1>
+
+        <style>
+            h1
+            {display: grid;
+                place-items: center;
+                font-size: 4rem;
+                margin-bottom: 20px;
+                
+            }
+        </style>
+    </header>
+    <main>
+
+        <section id="parent-div">
+
+            <div class="child child-1">child-1</div>
+            <div class="child child-2">child-2</div>
+            <div class="child child-3">child-3</div>
+            <div class ="child child-4">child-4</div>
+        </section>
+            <style>
+
+             main{
+                display: grid;
+                place-items: center;
+             }
+                #parent-div{
+                    border-radius: 0px 30px 30px 0px;
+                    width:800px;
+                    height:600px;
+               background-image: linear-gradient(to right, #26d0ce, #1a2980);
+                }
+
+                .child
+                {
+                    display: grid;
+                    place-items: center;
+                    font-size:2rem;
+                    /* margin:10px; */
+                    width:120px;
+                    height:130px;
+                     /* border: 1px solid black; */
+                     background-image:linear-gradient(to right top, #b3301d, #c86307, #d39300, #d1c413, #c1f44e);
+
+
+                }
+
+                .child:nth-child(2),
+                .child:nth-child(4)
+                {
+                    background-image:linear-gradient(to right, #93edc7, #1cd8d2); ;
+                    
+                }
+
+                 #parent-div{
+                    position: relative;
+
+                } 
+                .child-2{
+                     position:sticky ;
+                   
+                    margin-left:50%;
+                    margin-top: 60%;
+                    position: absolute;
+                     /** agar isko kiye to child 2 div ke sath saare div neeche chale jayenge agar sirf isko  margin change krna hai to absolute use krenge parent div ke relative mein**/
+                   
+                }
+
+
+
+            </style>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
