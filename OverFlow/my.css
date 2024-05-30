@@ -1,0 +1,85 @@
+/** ------------------------------------- -->
+/** OVERFLOW IN CSS
+/** ---------------------------------------- --> */
+
+/*? The overflow property in CSS is used to control how content overflows its containing element when it doesn't fit within the available space. It's a useful property for handling content that exceeds its container's dimensions. */
+
+/*? Overflow: Visible (Default): This is the default behavior where content can overflow its container without any clipping. Use it when you want content to extend beyond its container's boundaries.  */
+
+/* .container {   overflow: visible; } */
+
+/*? Overflow: Hidden: */
+/* Content that overflows the container is hidden and not visible. */
+/* Useful when you want to hide extra content that doesn't fit within a fixed-size container. */
+
+/* .container {   overflow: hidden; } */
+
+/*? Overflow: Scroll: */
+/* Scrollbars (both horizontal and vertical) are added to the container, allowing users to scroll to see the hidden content. */
+/* Use it when you want to display all content and provide a scrolling mechanism. */
+
+/* .container {  overflow: scroll; } */
+
+/*? Overflow: Auto: */
+
+/* Scrollbars are added only when content overflows the container. */
+/* It's a combination of visible (no scrollbars if content fits) and scroll (scrollbars when content overflows). Ideal for creating scrollable containers only when needed. */
+
+*{
+    padding:0;
+    margin:0;paddding :0;
+    box-sizing: border-box;
+}
+
+h1{
+    /* width:10%; */
+    margin-top:40px;
+    display: grid;
+    place-items: center;
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+
+div{
+    height: 310px;
+    border: 5px solid green;
+    padding:20px;
+    margin-top:20px;
+    width:500px;
+    /* ! when we give this value then content outside the box get invisible or we can the content get hidden*/
+    /* overflow: hidden; */
+    box-shadow: 10px -10px 5px 2px rgb(0, 0, 0);
+
+
+    /*Isme content ko box ke andar rakhne ke liye scroll ka use krenge to to saare content uss box me fit hojayenge y- VERTICAL or x-HORIZONTAL*/
+    /* ? overflow-y: scroll; */
+    /* Vertical */
+      /*? overflow-x: scroll;  */
+      /* ? Horizontal */
+
+   /* ! for both scrolling we can simply write the overflow */
+
+   /* ? overflow:scroll; */
+     /*? white-space: nowrap;  */
+      /*adjust in single line for shwoing the horizontal scroll bar*/
+
+      overflow: auto; /*this auto automatically detect that content take horizontal or vertical scroll bar*/
+
+}
+
+
+/** ------------------------------------- -->
+/** INTERVIEW QUESTIONS
+/** ---------------------------------------- --> */
+
+/*? 1: How does the overflow: hidden; property value work? */
+/* When overflow is set to hidden, any content that overflows the container's box is clipped and not visible. It effectively hides the overflowed content. */
+
+/*? 2: What is the difference between overflow: auto; and overflow: scroll;? */
+/* Both overflow: auto; and overflow: scroll; display scrollbars when content overflows. However, overflow: auto; only shows scrollbars when content overflows, while overflow: scroll; always displays scrollbars. */
+
+/*? 3: How can you make an element scrollable only horizontally (horizontally overflowed content) while hiding the vertical overflow? */
+/* You can achieve this by setting overflow-x: auto; to allow horizontal scrolling and overflow-y: hidden; to hide vertical overflow. */
