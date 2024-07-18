@@ -34,8 +34,7 @@ body{
     /* linear-gradient(to bottom, #fafbfd , #fafbfd ); */
     background-size: 100% 50% ;
     display: grid;
-    place-items: center;
-
+    place-items: center; 
 
  
 }

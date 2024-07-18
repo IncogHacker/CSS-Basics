@@ -1,6 +1,4 @@
-/** ------------------------------------- -->
-/** OVERFLOW IN CSS
-/** ---------------------------------------- --> */
+ .overflow-divo8
 
 /*? The overflow property in CSS is used to control how content overflows its containing element when it doesn't fit within the available space. It's a useful property for handling content that exceeds its container's dimensions. */
 
@@ -60,6 +58,7 @@
     padding: 10px;
   
     /* our code will start from here  */
+
     /* overflow: hidden; */
     /* overflow-y: scroll; */
     overflow-x: scroll;
@@ -76,7 +75,7 @@
     border: 5px solid #9eb384;
     padding: 10px;
   
-    /* our code will start from here  */ 
+  
   }
   
   /** ------------------------------------- -->
