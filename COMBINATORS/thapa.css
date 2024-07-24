@@ -95,7 +95,7 @@ li {
 
 /** --------------------------------- */
 
-/*!Dedcendent Selector */
+/*!Decendent Selector */
 
 .content-1 p{   /* this is the descendent selector */
   font-weight:bold;
@@ -110,7 +110,7 @@ li {
   color:green;
 }
 
-.content-1 > ul > li{ /* Selects an element that is a direct child of another element (here ul ke andar jo li hai wo direct child hona chahiye ul kaa tabhi color change hoga wrna nhi  > (shows Direct ))*/
+.content-1  ul > li{ /* Selects an element that is a direct child of another element (here ul ke andar jo li hai wo direct child hona chahiye ul kaa tabhi color change hoga wrna nhi  > (shows Direct ))*/
   color:red;
 
 }

@@ -66,7 +66,8 @@
   /*? Actual Positions starts Here  */
   
   .parent-div{
-    position:relative; /** iske anusar child apna position decide kregaa if absolute diye to yahan parent ka default position(relative) top 0 and left 0 hai to whin aajyega content  **/
+    position:relative; 
+    /** iske anusar child apna position decide kregaa if absolute diye to yahan parent ka default position(relative) top 0 and left 0 hai to whin aajyega content  **/
 
     /* margin-left: 300px; */
 

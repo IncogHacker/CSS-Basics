@@ -1,0 +1,208 @@
+/** ------------------------------------- -->
+/** Pseudo Classes in CSS
+/** ---------------------------------------- --> */
+
+/*? 1. Link (`a:link`): This is the default state for an unvisited link. */
+
+/*? 2. Visited (`a:visited`): This state applies to a link that the user has already visited. */
+
+/*? 3. Hover (`a:hover`): This state triggers when the user hovers their mouse pointer over a link. */
+
+/*? 4. Active (`a:active`): This state is triggered when the user clicks on a link. */
+
+/*? 5: :hover - This pseudo-class is used for styling an element when a user hovers their mouse over it. */
+/* a:hover {    color: #A78295; Change text color on hover   } */
+_____________________________________________________________________________________________________________________________
+
+
+
+/*? 6: :first-child - Selects the first child element of its parent. */
+
+/*? 7: :last-child - Selects the last child element of its parent. */
+
+/*? 8: :nth-child(n) - Selects elements based on their position within a parent element, where "n" is a numeric value. */
+
+/*? 9: :first-of-type - Selects the first element of its type within its parent. */
+
+/*? 10: :last-of-type - Selects the last element of its type within its parent. */
+
+/*? 11: :nth-of-type(n) - Selects elements of a specified type based on their position within a parent. */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: azure;
+}
+
+.Main {
+    background-color: black;
+}
+
+.Container {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    /* border: 3px solid red; */
+    width: 1420px;
+    margin: 0px auto;
+
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.headings h1{
+    color: white;
+    font-size: 3rem;
+    width:600px;
+
+}
+
+.headings P{
+    padding-top: 20px;
+    margin: 2rem 0px 3rem 0px;
+    color: white;
+    font-size: 20px;
+    width:600px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+
+}
+
+.headings a {
+ background-color: white;
+ padding: 5px 30px 5px 30px;
+border:2px solid white;
+border-radius: 5px;
+font-size: 2rem;
+font-weight: bold;
+color:black;
+text-decoration: none;
+text-transform: capitalize;
+
+}
+a:link{
+    color:blue;
+}
+a:hover
+{
+    color:green;
+}
+a:visited{
+    color:red;
+}
+a:active{
+    color:white;
+}
+
+ 
+
+.pseudo-class .Container {
+
+
+    border-radius: 20px;
+    width: 1200px;
+    height: 50vh;
+    background-color: white;
+
+
+}
+
+.pseudo-class{
+    padding-bottom: 100px;
+}
+
+
+/*Section 2 ----*/
+
+.content-1,.content-2
+{
+    font-size: 1rem;
+    /* display: grid;
+    place-items: center; */
+    text-align: center;
+    /* list-style: none; */
+}
+
+li{
+    list-style: none;
+    font-size: 2rem;
+}
+
+
+ /*? List of Pseudo Class use semi colon (:)  */
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+/* .content-1:first-child
+{
+color:red;
+
+} */  /*? isko use krenge to so content-1 me jitne hai sabko colour lag jayega*/
+
+
+ /* ----------------------------------------------------------------------------------------------------------- */
+
+ /* .content-1 ul:first-child{
+    color:red;  
+                   
+ } */
+ /*? isko bhi use krenge to so content-1 me jitne hai sabko colour lag jayega*/
+
+ /* ------------------------------------------------------------------------------------------------ */
+
+ /* .content-1 ul li:first-child{
+
+    color:red;
+ } */  
+
+ /*?here also first child not work*/
+
+
+ .content-1 li:first-child{
+    color: red;
+
+ }
+               /*div ke andar jo pehla li hoga ya pehla statement hoga whii select krega aur usse red kregaa */
+
+
+
+
+               .content-1 p:first-child{
+                color:red;
+               }
+               /*isme first-child paragraph hai to uska colour change kregaa*/
+ /* ------------------------------------------------------------------------------------------------------ */
+
+
+.content-1 p:last-child{
+    color:blue;
+}
+/*div parent me jo pehla aur last element hoga ussi ka select karke colour change krega */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* use of nth-of-type(place) */
+
+.content-1 li:nth-of-type(3)
+{
+    color:green;
+}
+
+/*isme specific number denge kis line ko slect krna ya colour change krna hai*/

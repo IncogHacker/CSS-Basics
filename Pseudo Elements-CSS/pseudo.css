@@ -1,0 +1,110 @@
+/** ------------------------------------- -->
+/**  Pseudo Elements In CSS 
+/** ---------------------------------------- --> */
+
+/*? ::before Pseudo-Element: The ::before pseudo-element is used to insert content before the content of an element. It is often employed to add decorative elements, icons, or text before an element without modifying the actual HTML content */
+
+/* syntax:  */
+
+/*? selector::before {
+    content: ""; /**compulsory **/
+/* Additional CSS properties go here  */
+/* } */
+*/
+/*? ::after Pseudo-Element: The ::after pseudo-element functions similarly to ::before, but it inserts content after the content of an element. It's often used for adding decorative elements, icons, or textual information after an element. */
+
+
+/* selector::after {
+    content: "";
+     Additional CSS properties go here
+} */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+
+
+.container {
+    display: grid;
+    align-items: center;
+    width: 1320px;
+    height: 100vh;
+    height: auto;
+    border: 2px solid white;
+    margin: 250px auto 0px auto;
+
+
+}
+
+.grid {
+    display: grid;
+    gap: 0px;
+    place-items: center;
+    border: 2px solid red;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main h1 {
+    width: 700px;
+    height: auto;
+    margin-bottom: 20px;
+    padding-top: 400px;
+    padding-left: 100px;
+    font-size: 3rem;
+    color: white;
+}
+
+/* Using before pseudo element (::) */
+.main h1::before {
+    content: "BEFORE --PSEUDO PART";
+    color: red;
+
+}
+
+/* using after pseudo elements */
+.main h1::after {
+
+    content: "AFTER----";
+    color: red;
+    position: relative;
+
+}
+
+
+a {
+
+    font-size: 2rem;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 250px;
+    height: auto;
+    border: 2px solid white;
+    padding: 5px 0px 5px 35px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.a a:hover {
+    color: green;
+}
