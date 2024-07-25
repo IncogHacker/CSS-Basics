@@ -1,0 +1,75 @@
+/** ------------------------------------- -->
+/**  COLUMN LAYOUT IN CSS  
+/** ---------------------------------------- -->
+
+/* The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers */
+/* 
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span
+column-width */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: #F0F0F0;
+}
+
+.Main h1 {
+    
+    width: 1000px;
+    /* display:grid;
+    place-items: center; */
+    margin: 100px auto 0px auto;
+
+
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 3rem;
+
+
+
+}
+
+#para p {
+    width:1000px;
+    text-align: center;
+    font-size:1.5rem;
+    margin:50px auto 0px auto;
+    font-weight: bold;
+    /* text-decoration: underline; */
+
+    Column-count:3; /* seperate the paragraph in 3 columns */
+
+    column-rule-color:red;
+
+    column-rule:3px solid red;
+
+    /* column-rule-style:dotted; */
+
+    column-gap:50px;
+
+    /* border:2px solid black; */
+
+    text-align: justify; /*ye gap nhi chode gaa saare sentence ko ek barabar dikhayega*/
+
+
+
+    /* column-fill:auto; */
+    /* fill paragraph in single column*/
+
+
+}
+

@@ -1,0 +1,212 @@
+/** ------------------------------------- -->
+/**  FLEXBOX IN CSS
+/** ---------------------------------------- --> */
+
+/*? Flexbox is a one-dimensional layout model that helps you distribute space along a single axis (either horizontally or vertically) in a flexible and efficient way. It allows you to align and distribute elements within a container, making it easier to create complex layouts without using floats or positioning.  */
+
+
+
+
+/** ----------- Flex Container Properties (Parent) ----------- */
+
+/*? 1:  Flex Container (display: flex;):
+To create a flexbox layout, you need a flex container. Apply display: flex; to the container element.
+.flex-container {
+  display: flex;
+} */
+
+/*? 2: Flex Items:
+Elements inside the flex container are called flex items.
+Flex items can be aligned and distributed along the main axis (horizontal or vertical). */
+
+/*? 3: Main Axis and Cross Axis:
+/** In a flex container,  one axis is considered the main axis, and the other is the cross axis. You can set the main axis to be either horizontal (row) or vertical (column). */
+
+/*? Flex Direction (flex-direction): Use flex-direction to specify the direction to either main axis or cross-axis.
+Values: row, row-reverse, column, column-reverse.
+.flex-container {
+  flex-direction: row; /* Horizontal main axis (default) 
+} */
+
+/*? if the flex-direction:row then horizontal will be main-axis 
+if flex-direction:column the vertical part will be main-axis and horizontal axis become the cross axis  */
+
+/*? Items display in a row (the flex-direction property's default is row). */
+
+/*? 4: Justify Content (justify-content): justify-content aligns flex items along the main axis.
+Values include flex-start, flex-end, center, space-between, and space-around. */
+
+/*? 5: Align Items (align-items):
+align-items aligns flex items along the cross axis.
+Values include flex-start, flex-end, center, stretch, and baseline. */
+
+/*? 6: flex-wrap:
+- Specifies whether flex items should wrap to the next line when they overflow the container.
+/** - Values: nowrap (default), wrap, wrap-reverse. */
+
+/*? 7: align-content:
+- Aligns multiple lines of flex items when there is extra space along the cross axis.
+- Values: flex-start, flex-end, center, space-between, space-around, stretch. */
+
+
+
+
+/** ------------- Flex Item Properties (children) ------------ */
+/*? a. order:
+- Determines the order in which a flex item appears relative to other flex items within the container.
+- Lower values come first. */
+
+/*? b. flex-grow:
+- Specifies how much a flex item should grow to fill available space along the main axis.
+- Default value is 0, meaning it won't grow. */
+
+/*? c. flex-shrink:
+- Specifies how much a flex item should shrink when there isn't enough space along the main axis.
+- Default value is 1, meaning it will shrink. */
+
+/*? d. flex-basis:
+- Defines the initial size of a flex item along the main axis.
+- Default value is auto, which means the item's size is determined by its content. */
+
+/*? e. flex (Shorthand for flex-grow, flex-shrink, and flex-basis):
+- Combines the three flex item properties in one declaration. */
+
+
+
+/** ---------- Alignment Properties (Self) ---------------- */
+
+/*? a. align-self:
+- Overrides the align-items property for an individual flex item.
+- Allows you to align a single item differently from others. */
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#main-heading
+{
+    width:1400px;
+    font-size: 5.2rem;
+    color:black;
+    margin:10px auto 0px auto;
+}
+
+.Flex-container{
+    
+    width:60%;
+    height:70vh;
+    border:2px solid black;
+    /* display: grid;
+    place-items: center; */
+    margin:30px auto 0px auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-image: linear-gradient(to right top, #d8c5a8, #c3ae8e, #af9774, #9b815b, #876c43, #876838, #86632d, #865f21, #9a6a1d, #ae7618, #c3810f, #d88d00);
+
+
+/*Properties of Flex Box Container */
+
+display: flex; /*default item boxes set horizontally or row...*/
+
+/* flex-direction: column;       */
+/*sets vertically*/
+
+/* flex-direction: row;         */
+ /*sets horizonatlly */
+
+/* flex-direction: row-reverse; */
+/*item boxes start opposite side*/
+
+/* flex-direction: column-reverse; */
+
+/* justify-content: flex-start;  */
+
+/* justify-content: flex-end; */
+
+justify-content: center;
+
+/* justify-content: space-around; */
+/*space around the item boxes is un-equal*/
+
+/* justify-content: space-between; */
+/*space between the item boxes is equal */
+
+/* justify-content: space-evenly; */
+
+/*spaces distributed evenly*/
+
+/* ------------------------------------------------------------------ */
+
+/* align-items: flex-start;  */
+
+/* align-items: flex-end; */
+
+/* align-items: center; */
+gap:20px; /*give gap between the item boxes*/
+
+
+   /* align-items: stretch; */
+
+
+}
+
+
+
+
+.item {
+    width:100px;
+
+    height:100px;
+
+    /* border:2px solid red; */
+
+    display:grid;
+    place-items: center;
+    color: white;
+    font-size: 1rem;
+
+    /* aspect-ratio: 1;  */
+    /*aspect-ratio that we see in the camera-- means height change ho rha to uske sath width change hoga aur vice-versa*/
+
+    background-image: linear-gradient(to right top, #a8bfd8, #89a2c7, #6e85b4, #5868a1, #474b8c, #6a418b, #8b3180, #a6176a, #dc354a, #ee7412, #dab500, #97f220);
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+flex:1; /*give all item equal space*/
+
+}
+/* some alternate methods to select the item */
+
+/* .item:first-of-type */
+
+/* .item-2 */
+
+.item:nth-of-type(2)
+
+{
+    /* height:500px;
+    color:green; */
+
+    flex-grow: 1; 
+    /*it work ki jitna available space hai usse leloo*/
+    
+    flex-shrink: 1;
+    /*aur jo item hai usase 5 times shrink hojaoo*/
+
+} 
+
+.item:nth-of-type(3)
+{
+    flex-basis: 200px; 
+    /*jo item 3 ka width hai usse overwrite krke 200 witdh ka bnadega*/
+
+    align-self: center; 
+    /* move individually
+     */
+
+
+}
+
+
