@@ -1,0 +1,108 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    /* margin-top: 250px; */
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+h1{
+    /* border: 2px solid red; */
+    /* width:50%;  */
+
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+
+    /* display: inline-block; */
+
+    /* margin: 0px auto 0px auto; */
+      /* margin-bottom: 100px; */
+
+}
+.grid-container{
+    background-color: white;
+    border: 3px solid blac;
+    box-shadow: inset;
+    width:90%;
+    height:auto;
+
+   /* display: flex;
+   flex-direction: column;
+   justify-content: center; */
+
+    margin:0px auto 0px auto;
+
+    /**here grid start to understand */
+
+    display: grid;
+    grid-template-rows:250px 250px ; /* two rows of 250px;*/
+
+    /* grid-template-columns:250px 250px 250px ;  */
+    /* create 3-column of 250px*/
+
+    /* grid-template-columns:250px 250px 1fr;  */
+    /*fr acquire the remaining space*/
+
+    /* grid-template-columns :1fr 1fr 1fr ;  */
+    /*equal size of column*/
+
+    grid-template-columns: repeat(3,1fr);
+    /*another way to write 3 columns with 1fr size*/
+
+    /* gaps in row and column */
+
+    /* grid-row-gap:50px; */
+    /* row-gap:50px; */
+
+    /* grid-column-gap:50px; */
+    /* column-gap:50px; */
+
+    /* or */
+
+    grid-gap:50px;
+
+    gap:50px; /*simply can gap is written in new CSS*/
+
+
+   
+}
+
+.item{
+    color: red;
+    
+    /* border:2px solid red; */
+    width:100%;
+    height:auto;
+    margin:0px auto 0px auto;
+
+
+    display: grid;
+    place-items: center;
+
+
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+.item:nth-of-type(even)
+{
+     background-image: linear-gradient(to right top, #a8bfd8, #89a2c7, #6e85b4, #5868a1, #474b8c, #6a418b, #8b3180, #a6176a, #dc354a, #ee7412, #dab500, #97f220);
+}
+.item:nth-of-type(odd)
+{
+    background-image: linear-gradient(to right bottom, #d8a8cc, #d893a0, #c68573, #a37e4f, #75793c, #547c4b, #307b61, #007877, #007da5, #007bde, #0069ff, #9f20f2);
+}
+
+.item:nth-of-type(1)
+{
+    
+}

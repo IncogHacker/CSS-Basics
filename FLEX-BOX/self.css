@@ -113,7 +113,7 @@ display: flex; /*default item boxes set horizontally or row...*/
 /* flex-direction: column;       */
 /*sets vertically*/
 
-/* flex-direction: row;         */
+flex-direction: row;        
  /*sets horizonatlly */
 
 /* flex-direction: row-reverse; */
@@ -143,7 +143,7 @@ justify-content: center;
 
 /* align-items: flex-end; */
 
-/* align-items: center; */
+align-items: center;
 gap:20px; /*give gap between the item boxes*/
 
 
@@ -174,7 +174,8 @@ gap:20px; /*give gap between the item boxes*/
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
 
-flex:1; /*give all item equal space*/
+flex:1;
+ /*give all item equal space*/
 
 }
 /* some alternate methods to select the item */
@@ -202,7 +203,7 @@ flex:1; /*give all item equal space*/
     flex-basis: 200px; 
     /*jo item 3 ka width hai usse overwrite krke 200 witdh ka bnadega*/
 
-    align-self: center; 
+    /* align-self: center;  */
     /* move individually
      */
 
