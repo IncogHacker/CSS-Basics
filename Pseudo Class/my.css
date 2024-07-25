@@ -111,6 +111,10 @@ a:active{
 
  
 
+
+/*Section 2 ----*/
+
+
 .pseudo-class .Container {
 
 
@@ -127,7 +131,6 @@ a:active{
 }
 
 
-/*Section 2 ----*/
 
 .content-1,.content-2
 {
@@ -205,4 +208,34 @@ color:red;
     color:green;
 }
 
+.content-1 li:nth-of-type(2)
+{
+    color:black;
+    border:2px solid red;
+   place-items: center;
+   display:grid;
+   
+    
+}
+
+/* jab nth-child use krenge to suru se count krenge parent ko maan kar naaaa ki jahan se li start ho rha wahan se to suru se count krne pe li 4th number se start hogaa  */
+
+.content-1 li:nth-child(7)
+{
+    color:goldenrod;
+
+    /* we can also use even and odd */
+}
+
 /*isme specific number denge kis line ko slect krna ya colour change krna hai*/
+
+
+/* use of first-of type and last-of-type*/
+
+.p-class:first-of-type
+{
+    color:green;
+}
+.p-class:last-of-type{
+    color:orange;
+}
