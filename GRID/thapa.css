@@ -36,6 +36,8 @@ grid-column-end */
 
 /*? Explicit vs Implicit grid  */
 
+/* explicit grid are grid that are created by us and implicit gride are grid that are craeted by own when need space */
+
 /*? 6. Grid Gaps: */
 
 /* Grid gaps are the spaces between grid items and tracks. */
@@ -112,16 +114,17 @@ grid-column-end */
     gap: 50px;
   
     /*? align  */
-    align-items: center;
+    /* align-items: center; */
     /* align-items: self-start; */
-    /* align-items: self-end; */
-    align-items: stretch;
+    align-items: self-end;
+    /* align-items: stretch; */
   
     /*? justify horizontally  */
+
     /* justify-items: self-start; */
     /* justify-items: center; */
-    /* justify-items: end; */
-    justify-items: stretch;
+    justify-items: end;
+    /* justify-items: stretch; */
   }
   
   @media (width < 1200px) {
