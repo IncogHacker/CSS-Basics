@@ -63,7 +63,8 @@
   /* Before Pseudo element  */
 
   h1::before {
-    content: "THAPA TECHNICAL";
+    content: "\f121";
+    font-family: "font awesome 6 free";
     color:white;
     position: absolute; /** (text placed at left=0 , top =0 relative parent ke hisab se apna place change krega) 
   }

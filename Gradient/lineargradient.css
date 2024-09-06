@@ -35,8 +35,8 @@ h1{
     border-radius: 20px;
 
 
-    background-image: linear-gradient(yellow, black); 
-        /*default top(yellow) to bottom(black) = 180deg if we write same thing happen */
+    /* background-image: linear-gradient(yellow, black);  */
+        /*default top(ye++llow) to bottom(black) = 180deg if we write same thing happen */
    
 
 
@@ -48,13 +48,13 @@ h1{
 
     /*! ANGELS IN GRADIENT (diagonally) */
 
-    /*? background-image: linear-gradient(to bottom right, rgb(255, 0, 85), black); */
+     /* background-image: linear-gradient(to bottom right, rgb(255, 0, 85), black); */
 
-    /* ?background-image:linear-gradient(to bottom left ,rgb(255, 0, 85), black) */
+    /* background-image:linear-gradient(to bottom left ,rgb(255, 0, 85), black) */
 
     /* TRANSPARENT GRADIENT */
 
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
+    /* background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)); */
 }
 
 
@@ -128,22 +128,23 @@ body{
     /*? here we are adding image behind and mixing color or linear gradient color with image as you see on the web page */
 
 
-    /* background-image: linear-gradient(
+     background-image: linear-gradient(
     to right top,
-    rgba(5, 25, 55, 0.9), /*? here 0.9 is opacity of colour soo image can seen from behind
+    rgba(5, 25, 55, 0.9),
+    /*? here 0.9 is opacity of colour soo image can seen from behind*/
     rgba(0, 77, 122, 0.9),
     rgba(0, 135, 147, 0.9),
     rgba(0, 191, 114, 0.9),
     rgba(168, 235, 18, 0.9)
-  ), */
-  /* url("https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  ), 
+   url("https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 
 
 
-  background-image: linear-gradient(to right top, rgb(209, 107, 165,0.5), rgb(199, 119, 185,0.5), rgb(186, 131, 202,0.5), rgb(170, 143, 216,0.5), rgb(154, 154, 225,0.5), rgb(138, 167, 236,0.5), rgb(121, 179, 244,0.5), rgb(105, 191, 248,0.5), rgb(82, 207, 254,0.5), rgb(66, 224, 255,0.5), rgb(70, 238, 250,0.5), rgb(95, 251, 241,0.5)),
+  /* background-image: linear-gradient(to right top, rgb(209, 107, 165,0.5), rgb(199, 119, 185,0.5), rgb(186, 131, 202,0.5), rgb(170, 143, 216,0.5), rgb(154, 154, 225,0.5), rgb(138, 167, 236,0.5), rgb(121, 179, 244,0.5), rgb(105, 191, 248,0.5), rgb(82, 207, 254,0.5), rgb(66, 224, 255,0.5), rgb(70, 238, 250,0.5), rgb(95, 251, 241,0.5)),
    url("/images/pexels-bảo-minh-3866754.jpg");
   background-repeat: no-repeat;
-  background-size: 100%100%;
+  background-size: 100%100%; */
   
 
 }
